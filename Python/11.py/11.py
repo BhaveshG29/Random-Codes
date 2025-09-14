@@ -7,4 +7,5 @@ a = a.astype('int16')
 a_t = a.reshape((3,1))
 
 det = np.matmul(a,a_t)
-print(math.sqrt(det[0]))
+
+print(math.sqrt(abs(det[0])))
