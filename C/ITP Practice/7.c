@@ -4,11 +4,10 @@
 
 int main() {
     int N;
-    if (scanf("%d", &N) != 1) {
-        return 1;
-    }
+    scanf("%d", &N);
 
     int present[N+1];
+
     for (int i = 1; i <= N; i++) {
         present[i] = 0;
     }
@@ -22,6 +21,7 @@ int main() {
     }
 
     int missing1 = 0, missing2 = 0;
+    
     for (int i = 1; i <= N; i++) {
         if (present[i] == 0) {
             if (missing1 == 0) {

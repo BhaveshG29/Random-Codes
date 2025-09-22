@@ -4,7 +4,7 @@
 
 int main(void) {
     int n, k;
-    if (scanf("%d %d", &n, &k) != 2) return 0;
+    scanf("%d %d", &n, &k);
 
     int a[n];
     for (int i = 0; i < n; i++) scanf("%d", &a[i]);
@@ -26,10 +26,10 @@ int main(void) {
     }
 
     for (int i = 0; i < n; i++) {
-        if (i) putchar(' ');
+        if (i) printf(" ");
         printf("%d", a[i]);
     }
-    putchar('\n');
+    printf("\n");
     return 0;
 }
 

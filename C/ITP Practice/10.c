@@ -1,5 +1,6 @@
-#include <stdio.h>
+//CODE BY BHAVESH G
 
+#include <stdio.h>
 
 int main(){
     int age;
