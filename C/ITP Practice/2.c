@@ -1,25 +1,27 @@
+//CODE BY BHAVESH G
+
 #include <stdio.h>
 #include <math.h>
 
 
-int main(){
+double sum(float p,int k);
 
-double x;
-int k;
-double l=0;
-double pow1;
-int pow2;
 
-scanf("%lf %d", &x, &k);
-
-for(int i=1; i<=k;i++){
-pow1 = pow(x,i);
-pow2 = pow(-1, i+1);
-l += (pow1*pow2)/i;
+double sum(float p, int k){
+if(k>0){
+int pow1 = pow(-1,k+1);
+double pow2 = pow(p, k);
+return (pow1*pow2)/k + sum(p, k-1);
 }
 
-printf("%.4lf\n", l);
+else return 0;
+}
 
 
-return 0;
+int main(){
+int n;
+float x;
+scanf("%f %d", &x, &n);
+
+printf("%.4lf\n", sum(x, n));
 }
