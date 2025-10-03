@@ -15,7 +15,7 @@ fig, ax = plt.subplots()
 ax.plot(x,y, c="r", label="Curve")
 
 #Adding Labels
-ax.set_title("Lissajous curve")
+ax.set_title("Lissajous Curve")
 ax.set_xlabel("X Axis")
 ax.set_ylabel("Y Axis")
 
@@ -34,4 +34,5 @@ ax.text(0,-0.55, "P(0,-0.5)",  fontsize=10, fontweight="bold", ha="center", va="
 #Adding Legend
 ax.legend(loc="best")
 
+plt.savefig("figs/Lissajous_Curve.png", dpi=300)
 plt.show()
