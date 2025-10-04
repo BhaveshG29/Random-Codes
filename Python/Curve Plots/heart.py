@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Circle
 
 def plot_curve():
     a = float(input("Enter the value of parameter 'a': "))
